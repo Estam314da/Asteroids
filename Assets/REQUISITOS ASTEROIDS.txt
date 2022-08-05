@@ -1,0 +1,57 @@
+ASTEROIDS   
+
+
+
+
+JUEGO - Stagemanager
+
+-El juego tiene una perspectiva top-down (desde arriba)
+-El objetivo es destruir los asteroides y acumular puntos
+-Si el jugador muere se acaba el juego
+-al comienzo de una partida se generan los asteroides alrededor del jugador
+
+ESCENARIO
+---------------
+- Limitado a una pantalla de juego con mapa envolvente
+-Contexto espacial con un fondo de estrellas y/o galaxias
+
+NAVE DEL JUGADOR
+
+1)Movimiento
+x- Posicion, Rotacion )(se lo da el transform del objeto)
+x-Girar al pulsar una tecla, a una determinada velocidad de giro
+x-Avanzar hacia el "arriba" de la nave (frontal de la nave, vista desde arriba)a una determinada velocidad de avance
+x-Tiene inercia
+x-Si se sale por un extremo de la pantalla aparece por el contrario
+x-Si colisiona con un asteroide muere
+
+2)Disparo
+- al pulsar espacio, creamos una bala en la direccion en la que mira la nave
+- las balas se mueven en la direccion que tenia la nave al ser disparada a un acierta vel
+- si una bala impacta con un asteroide lo destruye y se crean 2 de menor tamaño, si es de tamaño medio o grande. Si es pequeño desaparece
+
+
+ASTEROIDES
+-Aparecen X por nivel lejos del jugador (fuera de la pantalla)
+-Tienen varios tamaños (grande, mediano y pequeño)
+x-Al aparecer, se les asigna una direccion aleatoria
+x-Se mueven a vel cte en la direccion asignada
+x-Detlle: rotan al moverse, sin afectar a la direccion del mov
+x-Si se sale por un extremo de la pantalla aparece por el contrario
+-Si chocan entre ellos rebotan, cambiando sus direcciones de movimiento
+
+
+1)Rotura
+
+2)Distintos tipos de enemigos
+3)ovni,pasa de un lado de la pantalla a otro y nos dispara (en linea recta)
+
+
+POTENCIADORES
+-----------------
+
+
+
+
+
+
